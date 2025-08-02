@@ -61,6 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Сибирская палитра SibCHAT
+				siberian: {
+					green: '#10B981',
+					yellow: '#FFD700', 
+					blue: '#87CEEB',
+					purple: '#8A2BE2',
+					darkblue: '#20B2AA',
+					teal: '#40E0D0',
+					cyan: '#00CED1',
+					red: '#DC143C',
+					black: '#1A1F2C',
+					frost: '#E5F6FF'
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,34 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'freeze': {
+					'0%': { 
+						opacity: '1', 
+						transform: 'scale(1) rotate(0deg)',
+						filter: 'blur(0px) hue-rotate(0deg)'
+					},
+					'50%': { 
+						opacity: '0.7', 
+						transform: 'scale(0.98) rotate(0.5deg)',
+						filter: 'blur(1px) hue-rotate(20deg)'
+					},
+					'100%': { 
+						opacity: '0.3', 
+						transform: 'scale(0.95) rotate(1deg)',
+						filter: 'blur(2px) hue-rotate(40deg)'
+					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'freeze': 'freeze 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.3s ease-out'
 			}
 		}
 	},
