@@ -149,16 +149,7 @@ const Index = () => {
     }
   ]);
 
-  const siberianStickers = [
-    { name: 'Медведь с рыбой', emoji: '🐻🐟' },
-    { name: 'Снежинка', emoji: '❄️' },
-    { name: 'Баня', emoji: '🧖‍♂️🔥' },
-    { name: 'Олень', emoji: '🦌' },
-    { name: 'Тайга', emoji: '🌲🌲' },
-    { name: 'Мороз', emoji: '🥶' },
-    { name: 'Шаман', emoji: '🧙' },
-    { name: 'Лед на Байкале', emoji: '🏔️❄️' }
-  ];
+
 
   const sendMessage = () => {
     if (!newMessage.trim()) return;
